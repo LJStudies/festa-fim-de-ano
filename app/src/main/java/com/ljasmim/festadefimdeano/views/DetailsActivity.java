@@ -21,6 +21,10 @@ public class DetailsActivity extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
 
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.mipmap.ic_launcher);
+
         mSecurityPreferences = new SecurityPreferences(this);
 
         this.mViewHolder.checkParticipate = (CheckBox) findViewById(R.id.check_participate);
