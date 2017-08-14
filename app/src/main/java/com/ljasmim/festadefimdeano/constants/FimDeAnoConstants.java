@@ -7,7 +7,7 @@ package com.ljasmim.festadefimdeano.constants;
 
 public class FimDeAnoConstants {
 
-    public static final String PRESENCE = "presence_key";
+    public static final String PRESENCE_KEY = "presence_key";
     public static final String CONFIRMED_WILL_GO = "yes";
     public static final String CONFIRMED_WONT_GO = "no";
 

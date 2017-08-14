@@ -12,12 +12,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/participacao"/>
+        android:text="@string/voce_vai_participar"/>
 
     <CheckBox
         android:id="@+id/check_participate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/participacao"/>
+        android:text="@string/voce_vai_participar"/>
 
 </LinearLayout>

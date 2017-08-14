@@ -34,7 +34,7 @@ public class DetailsActivity extends AppCompatActivity implements View.OnClickLi
         Bundle extras = getIntent().getExtras();
 
         if (extras != null) {
-            String presence = extras.getString(FimDeAnoConstants.PRESENCE);
+            String presence = extras.getString(FimDeAnoConstants.PRESENCE_KEY);
             if (presence.equals(FimDeAnoConstants.CONFIRMED_WILL_GO)) {
                 this.mViewHolder.checkParticipate.setChecked(true);
             } else {
@@ -49,10 +49,10 @@ public class DetailsActivity extends AppCompatActivity implements View.OnClickLi
         int id = view.getId();
         if (id == R.id.check_participate) {
             if (this.mViewHolder.checkParticipate.isChecked()) {
-                this.mSecurityPreferences.storeString(FimDeAnoConstants.PRESENCE,
+                this.mSecurityPreferences.storeString(FimDeAnoConstants.PRESENCE_KEY,
                         FimDeAnoConstants.CONFIRMED_WILL_GO);
             } else {
-                this.mSecurityPreferences.storeString(FimDeAnoConstants.PRESENCE,
+                this.mSecurityPreferences.storeString(FimDeAnoConstants.PRESENCE_KEY,
                         FimDeAnoConstants.CONFIRMED_WONT_GO);
             }
         }
